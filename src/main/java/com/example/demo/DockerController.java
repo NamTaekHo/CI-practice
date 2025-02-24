@@ -21,7 +21,7 @@ public class DockerController {
 
     @GetMapping("/test/dept/{dept-id}")
     public ResponseEntity testDept(@PathVariable("dept-id") long deptId){
-        DeptResponse response = new DeptResponse(deptId, "CS001023004", "컨테이너 실습", 3, "CS0010230000", "수강생대표팀");
+        DeptResponse response = new DeptResponse(deptId, "CS001023004", "컨테이너 실습2", 3, "CS0010230000", "수강생대표팀");
         return new ResponseEntity(response, HttpStatus.OK);
     }
 }
